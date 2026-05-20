@@ -55,7 +55,6 @@ To transition this pipeline from a theoretical capstone project into a productio
 * **Multivariate Models (SARIMAX/LSTMs):** Integrating alternative data like financial news sentiment and macroeconomic indicators to improve model responsiveness to sudden market shocks.
 * **Higher-Frequency Training:** Shifting to hourly or 15-minute intervals to better capture intra-day price swings.
 Future iterations of this pipeline aim to incorporate:
-* **Multivariate Models (SARIMAX/LSTMs):** Integrating alternative data like financial news sentiment and macroeconomic indicators to improve shock responsiveness.
 * **Ensemble Forecasting:** Averaging predictions across all three methodologies to smooth isolated algorithmic biases.
 
 ## 📂 Repository Contents

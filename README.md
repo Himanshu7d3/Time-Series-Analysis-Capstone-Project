@@ -47,9 +47,15 @@ To evaluate efficacy, a 48-hour forward testing window was analyzed against unse
 
 ## 🔮 Future Improvements
 
+To transition this pipeline from a theoretical capstone project into a production-ready financial tool, future iterations will focus on scalability, automation, and user accessibility:
+
+* **Expanding the Stock Universe:** Scaling the analysis from 5 large-cap stocks to the broader NIFTY 50 or NIFTY 100. By evaluating a larger pool of assets, the algorithm can dynamically filter and select only the stocks where the models (SARIMA, Prophet, LSTM) exhibit the highest historical accuracy and lowest "Model Risk," thereby further minimizing potential loss and maximizing risk-adjusted returns.
+* **Full-Stack Web Application (UI Dashboard):** Transitioning the static Jupyter pipeline into a dynamic, user-friendly web interface (e.g., using Streamlit). A dedicated frontend will allow users to interact with the output data, visualize predictive risk bands, and view real-time portfolio allocation recommendations on a daily basis.
+* **Automated Nightly Retraining Pipeline:** Implementing a cloud-based scheduled workflow (via Cron jobs, AWS EventBridge, or GitHub Actions) to fully automate the pipeline. The system will automatically fetch the latest NSE closing data and retrain all heavy machine learning models at midnight. This ensures the web dashboard is pre-loaded with fresh, zero-latency predictions well before the market opens the next morning.
+* **Multivariate Models (SARIMAX/LSTMs):** Integrating alternative data like financial news sentiment and macroeconomic indicators to improve model responsiveness to sudden market shocks.
+* **Higher-Frequency Training:** Shifting to hourly or 15-minute intervals to better capture intra-day price swings.
 Future iterations of this pipeline aim to incorporate:
 * **Multivariate Models (SARIMAX/LSTMs):** Integrating alternative data like financial news sentiment and macroeconomic indicators to improve shock responsiveness.
-* **Higher-Frequency Training:** Shifting to hourly or 15-minute intervals to better capture intra-day price swings.
 * **Ensemble Forecasting:** Averaging predictions across all three methodologies to smooth isolated algorithmic biases.
 
 ## 📂 Repository Contents
